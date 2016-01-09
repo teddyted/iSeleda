@@ -28,7 +28,7 @@ import pixelitor.ImageComponent;
 import pixelitor.ImageComponents;
 import pixelitor.NewImage;
 import pixelitor.PixelitorWindow;
-import pixelitor.Categories;
+import pixelitor.categoriesMain;
 import pixelitor.TipsOfTheDay;
 import pixelitor.automate.BatchFilterWizard;
 import pixelitor.automate.BatchResize;
@@ -207,7 +207,7 @@ public class MenuBar extends JMenuBar {
             @Override
                     void onClick() {
 //                        Categories.showCategories(pixelitorWindow, true);
-                          Categories.showCategories();
+                          categoriesMain.showCategories();
  //                       ImageLayer imageLayer; //(ImageLayer) layer;
 //                        imageLayer = new ImageLayer("", "/Users/teddyted/Pictures/mathLove.jpeg", 0xc8, 0xc8);
                         //tmpBI = imageLayer.getImage();

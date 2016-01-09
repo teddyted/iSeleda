@@ -42,7 +42,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 
-
 public class Categories extends javax.swing.JFrame {
 
     /**
@@ -65,6 +64,7 @@ public class Categories extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         templatesButton = new javax.swing.JButton();
+        allButton = new javax.swing.JButton();
         numbersButton = new javax.swing.JButton();
         introVideoButton = new javax.swing.JButton();
         backButton = new javax.swing.JButton();
@@ -82,22 +82,41 @@ public class Categories extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(800, 600));
         jPanel1.setLayout(null);
 
+
+        allButton.setBackground(new java.awt.Color(204, 0, 51));
+        allButton.setOpaque(false);
+        allButton.setContentAreaFilled(false);
+        allButton.setBorderPainted(false);
+        allButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        allButton.setText("Numbers");
+        allButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                allButtonActionPerformed(evt);
+            }
+        });
+        
+        jPanel1.add(allButton);
+        allButton.setBounds(40, 190, 140, 50);
+        allButton.setText("All");
+        allButton.getAccessibleContext().setAccessibleName("pixelitor");
+        
+        
         numbersButton.setBackground(new java.awt.Color(204, 0, 51));
+        numbersButton.setOpaque(false);
+        numbersButton.setContentAreaFilled(false);
+        numbersButton.setBorderPainted(false);
         numbersButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        numbersButton.setText("Family");
+        numbersButton.setText("Numbers");
         numbersButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 numbersButtonActionPerformed(evt);
             }
         });
         jPanel1.add(numbersButton);
-        numbersButton.setBounds(40, 190, 140, 50);
-
-        numbersButton.setText("Numbers");
-        jPanel1.add(numbersButton);
         numbersButton.setBounds(10, 100, 190, 70);
         numbersButton.getAccessibleContext().setAccessibleName("pixelitor");
 
+        
         introVideoButton.setText("Video");
         introVideoButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -130,6 +149,11 @@ public class Categories extends javax.swing.JFrame {
     }// </editor-fold>                        
     private static final Logger LOG = Logger.getLogger(Categories.class.getName());
 
+    private void allButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                
+        this.setVisible(false);
+        numbersMain nMain = new numbersMain("All");
+        nMain.setVisible(true);
+    }
     private void numbersButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                
         this.setVisible(false);
         numbersMain nMain = new numbersMain("Numbers");
@@ -190,6 +214,7 @@ public class Categories extends javax.swing.JFrame {
     private javax.swing.JButton introVideoButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton allButton;
     private javax.swing.JButton numbersButton;
     private javax.swing.JButton templatesButton;
     // End of variables declaration                   
