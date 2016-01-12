@@ -137,6 +137,7 @@ public class Categories extends javax.swing.JFrame {
         backButton.setBounds(70, 520, 75, 29);
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+//old        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/IDCRTT/dictionary_categories_ar.png"))); // NOI18N
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/IDCRTT/dictionary_categories_ar.png"))); // NOI18N
         jLabel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel1.add(jLabel1);

@@ -206,6 +206,7 @@ public class categoriesMain extends javax.swing.JFrame {
         numbersMain nMain = new numbersMain("All");
         nMain.setVisible(true);
     }
+    /* Elmo a copier pour les autres categories */
     private void numbersButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                
         this.setVisible(false);
         numbersMain nMain = new numbersMain("Numbers");

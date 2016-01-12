@@ -36,7 +36,7 @@ public class Pixelitor {
     /**
      * Utility class with static methods
      */
-    private Pixelitor() {
+    public Pixelitor() {
     }
 
     public static void main(String[] args) {
@@ -52,6 +52,10 @@ public class Pixelitor {
         ExceptionHandler.INSTANCE.register();
         EventQueue.invokeLater(() -> {
             try {
+                for(String arg : args){
+                    System.out.println(arg+"--");
+                }
+                System.out.println(args);
                 createAndShowGUI(args);
 
                 // this will run on a different thread, but call it
