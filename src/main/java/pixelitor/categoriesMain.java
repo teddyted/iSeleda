@@ -203,13 +203,23 @@ public class categoriesMain extends javax.swing.JFrame {
     }// </editor-fold> 
     private void allButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                
         this.setVisible(false);
-        numbersMain nMain = new numbersMain("All");
+        categoryMain nMain = new categoryMain("All");
         nMain.setVisible(true);
     }
     /* Elmo a copier pour les autres categories */
     private void numbersButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                
         this.setVisible(false);
-        numbersMain nMain = new numbersMain("Numbers");
+        categoryMain nMain = new categoryMain("Numbers");
+        nMain.setVisible(true);
+    }
+    private void cultureButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                
+        this.setVisible(false);
+        categoryMain nMain = new categoryMain("Culture");
+        nMain.setVisible(true);
+    }
+    private void quantitiesButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                
+        this.setVisible(false);
+        categoryMain nMain = new categoryMain("Quantities");
         nMain.setVisible(true);
     }
 /* @TODO
@@ -300,5 +310,5 @@ public class categoriesMain extends javax.swing.JFrame {
     /* Categories Buttons */
     private javax.swing.JButton allButton;
     private javax.swing.JButton numbersButton;
-    // End of variables declaration                   
+    // End of variables declaration
 }

@@ -64,8 +64,20 @@ public class Categories extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         templatesButton = new javax.swing.JButton();
+        //allButton = new javax.swing.JButton();
+
+        
+        
         allButton = new javax.swing.JButton();
+        
+        cultureButton = new javax.swing.JButton();
+        quantitiesButton = new javax.swing.JButton();
+        religionButton = new javax.swing.JButton();
+        foodButton = new javax.swing.JButton();
+        
         numbersButton = new javax.swing.JButton();
+        feelingsButton = new javax.swing.JButton();       
+        
         introVideoButton = new javax.swing.JButton();
         backButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -82,13 +94,92 @@ public class Categories extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(800, 600));
         jPanel1.setLayout(null);
 
-
+        
+        allButton.setToolTipText("");
         allButton.setBackground(new java.awt.Color(204, 0, 51));
         allButton.setOpaque(false);
         allButton.setContentAreaFilled(false);
         allButton.setBorderPainted(false);
         allButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        allButton.setText("Numbers");
+        allButton.setText("All");
+        allButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                allButtonActionPerformed(evt);
+            }
+        });
+        allButton.getAccessibleContext().setAccessibleName("pixelitor");
+        jPanel1.add(allButton);
+        allButton.setBounds(67, 109, 150, 60);
+        
+        cultureButton.setToolTipText("");
+        cultureButton.setBackground(new java.awt.Color(204, 0, 51));
+        cultureButton.setOpaque(false);
+        cultureButton.setContentAreaFilled(false);
+        cultureButton.setBorderPainted(false);
+        cultureButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        cultureButton.setText("Culture");
+        cultureButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cultureButtonActionPerformed(evt);
+            }
+        });
+        cultureButton.getAccessibleContext().setAccessibleName("pixelitor");        
+        jPanel1.add(cultureButton);
+        cultureButton.setBounds(50, 179, 160, 70);
+        
+        quantitiesButton.setToolTipText("");
+        quantitiesButton.setBackground(new java.awt.Color(204, 0, 51));
+        quantitiesButton.setOpaque(false);
+        quantitiesButton.setContentAreaFilled(false);
+        quantitiesButton.setBorderPainted(false);
+        quantitiesButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        quantitiesButton.setText("Quantities");
+        quantitiesButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quantitiesButtonActionPerformed(evt);
+            }
+        });        
+        jPanel1.add(quantitiesButton);
+        quantitiesButton.setBounds(7, 259, 170, 80);
+
+        religionButton.setToolTipText("");
+        religionButton.setBackground(new java.awt.Color(204, 0, 51));
+        religionButton.setOpaque(false);
+        religionButton.setContentAreaFilled(false);
+        religionButton.setBorderPainted(false);
+        religionButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        religionButton.setText("Religion");
+        religionButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                religionButtonActionPerformed(evt);
+            }
+        });         
+        jPanel1.add(religionButton);
+        religionButton.setBounds(10, 360, 140, 80);
+        
+        foodButton.setToolTipText("");
+        foodButton.setBackground(new java.awt.Color(204, 0, 51));
+        foodButton.setOpaque(false);
+        foodButton.setContentAreaFilled(false);
+        foodButton.setBorderPainted(false);
+        foodButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        foodButton.setText("Food");
+        foodButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                foodButtonActionPerformed(evt);
+            }
+        }); 
+        jPanel1.add(foodButton);
+        foodButton.setBounds(0, 500, 120, 50);
+        
+        
+/*
+        allButton.setBackground(new java.awt.Color(204, 0, 51));
+        allButton.setOpaque(false);
+        allButton.setContentAreaFilled(false);
+        allButton.setBorderPainted(false);
+        allButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        allButton.setText("All");
         allButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 allButtonActionPerformed(evt);
@@ -113,9 +204,41 @@ public class Categories extends javax.swing.JFrame {
             }
         });
         jPanel1.add(numbersButton);
-        numbersButton.setBounds(10, 100, 190, 70);
+        feelingsButton.setBounds(10, 100, 290, 70);
         numbersButton.getAccessibleContext().setAccessibleName("pixelitor");
 
+        feelingsButton.setBackground(new java.awt.Color(204, 0, 51));
+        feelingsButton.setOpaque(false);
+        feelingsButton.setContentAreaFilled(false);
+        feelingsButton.setBorderPainted(false);
+        feelingsButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        feelingsButton.setText("Feelings");
+        feelingsButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                numbersButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(feelingsButton);
+        feelingsButton.setBounds(10, 100, 190, 70);
+        feelingsButton.getAccessibleContext().setAccessibleName("pixelitor");
+        
+        
+        cultureButton.setBackground(new java.awt.Color(204, 0, 51));
+        cultureButton.setOpaque(false);
+        cultureButton.setContentAreaFilled(false);
+        cultureButton.setBorderPainted(false);
+        cultureButton.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        cultureButton.setText("Numbers");
+        cultureButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cultureButtonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(cultureButton);
+        feelingsButton.setBounds(10, 100, 290, 70);
+        cultureButton.getAccessibleContext().setAccessibleName("pixelitor");
+        
+        */
         
         introVideoButton.setText("Video");
         introVideoButton.addActionListener(new java.awt.event.ActionListener() {
@@ -137,7 +260,6 @@ public class Categories extends javax.swing.JFrame {
         backButton.setBounds(70, 520, 75, 29);
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-//old        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/IDCRTT/dictionary_categories_ar.png"))); // NOI18N
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/IDCRTT/dictionary_categories_ar.png"))); // NOI18N
         jLabel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel1.add(jLabel1);
@@ -152,15 +274,37 @@ public class Categories extends javax.swing.JFrame {
 
     private void allButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                
         this.setVisible(false);
-        numbersMain nMain = new numbersMain("All");
+        categoryMain nMain = new categoryMain("All");
         nMain.setVisible(true);
     }
     private void numbersButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                
         this.setVisible(false);
-        numbersMain nMain = new numbersMain("Numbers");
+        categoryMain nMain = new categoryMain("Numbers");
+        nMain.setVisible(true);
+    }
+    
+    private void cultureButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                
+        this.setVisible(false);
+        categoryMain nMain = new categoryMain("Numbers");
         nMain.setVisible(true);
     }
 
+    private void quantitiesButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                
+        this.setVisible(false);
+        categoryMain nMain = new categoryMain("Numbers");
+        nMain.setVisible(true);
+    }
+    private void religionButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                
+        this.setVisible(false);
+        categoryMain nMain = new categoryMain("Numbers");
+        nMain.setVisible(true);
+    }
+    private void foodButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                
+        this.setVisible(false);
+        categoryMain nMain = new categoryMain("Food");
+        nMain.setVisible(true);
+    }
+    
     private void introVideoButtonActionPerformed(java.awt.event.ActionEvent evt) {
         // Video frame showing intro.mp4
         //close(); //ne radi
@@ -217,96 +361,15 @@ public class Categories extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton allButton;
     private javax.swing.JButton numbersButton;
+    private javax.swing.JButton feelingsButton;
     private javax.swing.JButton templatesButton;
+    
+    
+
+    private javax.swing.JButton cultureButton;
+    private javax.swing.JButton foodButton;
+    private javax.swing.JButton quantitiesButton;
+    private javax.swing.JButton religionButton;
     // End of variables declaration                   
 }
 
-/*
-public class Categories extends JDialog implements ActionListener {
-  public Categories(JFrame parent, String title, String message) {
-    super(parent, title, true);
-    if (parent != null) {
-      Dimension parentSize = parent.getSize(); 
-      Point p = parent.getLocation(); 
-      setLocation(p.x + parentSize.width / 4, p.y + parentSize.height / 4);
-    }
-    JPanel messagePane = new JPanel();
-    messagePane.add(new JLabel(message));
-    getContentPane().add(messagePane);
-    JPanel buttonPane = new JPanel();
-    
-    JButton button = new JButton("OK"); 
-    buttonPane.add(button); 
-    button.addActionListener(this);
-    getContentPane().add(buttonPane, BorderLayout.SOUTH);
-    setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-    
-    pack(); 
-    setVisible(true);
-  }
-  public void actionPerformed(ActionEvent e) {
-    setVisible(false); 
-    dispose(); 
-  }
-  public static void showCategories() {
-    Categories dlg = new Categories(new JFrame(), "title", "message");
-  }
-}
-
-/*
-    
-public class Categories {
-    private static final Preferences tipPrefs = AppPreferences.getMainUserNode();
-
-    private static int nextCategory = -1;
-
-    private static final String NEXT_TIP_NR_KEY = "next_tip_nr";
-
-    private Categories() {
-    }
-
-    public static void showCategories(JFrame parent, boolean force) {
-
-        try {
-            if (nextCategory == -1) {
-                nextCategory = tipPrefs.getInt(NEXT_TIP_NR_KEY, 0);
-            }
-
-            CategoryModel CategoryModel = loadModel();
-            int categoryCount = CategoryModel.getCategoryCount();
-            if (nextCategory < 0) {
-                nextCategory = 0;
-            }
-            if (nextCategory > categoryCount - 1) {
-                nextCategory = categoryCount - 1;
-            }
-
-            JXCategory category = new JXCategory(CategoryModel);
-            category.setCurrentCategory(nextCategory);
-            category.showDialog(parent, tipPrefs, force);  // this stops until the user hits close
-
-            int lastCategoryIndex = category.getCurrentCategory();
-            if (lastCategoryIndex < categoryCount - 1) {
-                nextCategory = lastCategoryIndex + 1;
-            } else {
-                nextCategory = 0;
-            }
-        } catch (IOException ex) {
-            Dialogs.showExceptionDialog(ex);
-        }
-    }
-
-    private static CategoryModel loadModel() throws IOException {
-        Properties properties = new Properties();
-        InputStream propertiesInputStream = Categories.class.getResourceAsStream("/categories.properties");
-        properties.load(propertiesInputStream);
-        CategoryModel model = CategoryLoader.load(properties);
-        propertiesInputStream.close();
-        return model;
-    }
-
-    public static void saveNextCategoryNr() {
-        tipPrefs.putInt(NEXT_TIP_NR_KEY, nextCategory);
-    }
-}
-*/
