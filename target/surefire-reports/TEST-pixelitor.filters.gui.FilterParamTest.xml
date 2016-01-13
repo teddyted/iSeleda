@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="98" failures="0" name="pixelitor.filters.gui.FilterParamTest" time="0.671" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.65-b01"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/teddyted/NetBeansProjects/pixelitor_3.1.3_src"/>
+    <property name="java.runtime.version" value="1.8.0_65-b17"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/p_/m256c6fj7lz6yh3k3rgz3bym0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/webcommon/bin::/Users/teddyted/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.10.5"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/teddyted"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="teddyted"/>
+    <property name="java.class.path" value="/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/java/maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_65"/>
+    <property name="java.ext.dirs" value="/Users/teddyted/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetTrue[0]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCopyAndSetState[0]" time="0.016"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testRandomize[0]" time="0.001"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testGetNrOfGridBagCols[0]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testSimpleMethods[0]" time="0.052"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCreateGUI[0]" time="0.003"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetFalse[0]" time="0.001"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetTrue[1]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCopyAndSetState[1]" time="0.001"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testRandomize[1]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testGetNrOfGridBagCols[1]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testSimpleMethods[1]" time="0.028"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCreateGUI[1]" time="0.003"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetFalse[1]" time="0.001"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetTrue[2]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCopyAndSetState[2]" time="0.001"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testRandomize[2]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testGetNrOfGridBagCols[2]" time="0.001"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testSimpleMethods[2]" time="0.018"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCreateGUI[2]" time="0.006"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetFalse[2]" time="0.002"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetTrue[3]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCopyAndSetState[3]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testRandomize[3]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testGetNrOfGridBagCols[3]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testSimpleMethods[3]" time="0.005"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCreateGUI[3]" time="0.005"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetFalse[3]" time="0.001"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetTrue[4]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCopyAndSetState[4]" time="0.022"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testRandomize[4]" time="0.001"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testGetNrOfGridBagCols[4]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testSimpleMethods[4]" time="0.019"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCreateGUI[4]" time="0.006"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetFalse[4]" time="0.001"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetTrue[5]" time="0.02"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCopyAndSetState[5]" time="0.008"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testRandomize[5]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testGetNrOfGridBagCols[5]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testSimpleMethods[5]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCreateGUI[5]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetFalse[5]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetTrue[6]" time="0.001"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCopyAndSetState[6]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testRandomize[6]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testGetNrOfGridBagCols[6]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testSimpleMethods[6]" time="0.001"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCreateGUI[6]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetFalse[6]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetTrue[7]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCopyAndSetState[7]" time="0.025"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testRandomize[7]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testGetNrOfGridBagCols[7]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testSimpleMethods[7]" time="0.044"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCreateGUI[7]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetFalse[7]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetTrue[8]" time="0.001"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCopyAndSetState[8]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testRandomize[8]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testGetNrOfGridBagCols[8]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testSimpleMethods[8]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCreateGUI[8]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetFalse[8]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetTrue[9]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCopyAndSetState[9]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testRandomize[9]" time="0.001"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testGetNrOfGridBagCols[9]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testSimpleMethods[9]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCreateGUI[9]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetFalse[9]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetTrue[10]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCopyAndSetState[10]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testRandomize[10]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testGetNrOfGridBagCols[10]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testSimpleMethods[10]" time="0.002"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCreateGUI[10]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetFalse[10]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetTrue[11]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCopyAndSetState[11]" time="0.003"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testRandomize[11]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testGetNrOfGridBagCols[11]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testSimpleMethods[11]" time="0.006"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCreateGUI[11]" time="0.002"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetFalse[11]" time="0.001"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetTrue[12]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCopyAndSetState[12]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testRandomize[12]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testGetNrOfGridBagCols[12]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testSimpleMethods[12]" time="0.003"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCreateGUI[12]" time="0.002"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetFalse[12]" time="0.001"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetTrue[13]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCopyAndSetState[13]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testRandomize[13]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testGetNrOfGridBagCols[13]" time="0"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testSimpleMethods[13]" time="0.003"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testCreateGUI[13]" time="0.002"/>
+  <testcase classname="pixelitor.filters.gui.FilterParamTest" name="testResetFalse[13]" time="0"/>
+</testsuite>
